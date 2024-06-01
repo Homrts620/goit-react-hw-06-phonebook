@@ -7,7 +7,7 @@ import { Filter } from './Filter/Filter';
 import { getContacts } from './redux/state';
 
 
-const key = 'Contacts';
+const Key = 'Contacts';
 
 export const App = () => {
   const contacts = useSelector(getContacts);
@@ -23,12 +23,12 @@ export const App = () => {
 
   return (
     <div className={css.primary}>
-      <h1 className={css.header}> Phonebook</h1>
-      <ContactAdd onSubmit={addNewContact} />
+      <h1 className={css.header}>Phonebook</h1>
+      <ContactAdd />
 
       <h2 className={css.header}>Contacts</h2>
-
-      <ContactList contacts={contacts} deleteFunction={deleteUser} />
+      <Filter />
+      <ContactList />
     </div>
   );
 };
