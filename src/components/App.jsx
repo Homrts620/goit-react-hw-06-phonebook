@@ -4,7 +4,7 @@ import css from './App.module.css';
 import { ContactAdd } from './ContactAdd/ContactAdd';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
-import { getContacts } from '../redux/state';
+import { getContacts } from './redux/state';
 
 
 const Key = 'Contacts';
